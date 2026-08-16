@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Silme Talebi - Minik Adimlar</title>
+    <meta name="description" content="Minik Adimlar uygulamasinda hesabinizi ve verilerinizi silin.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #FF7B9C; --bg-color: #F8F9FA; --text-color: #333333; --card-bg: #FFFFFF; --border-color: #EAEAEA; }
+        body { font-family: "Inter", sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; }
+        .header { background: linear-gradient(135deg, #FF7B9C, #FF9E7B); color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0; opacity: 0.9; }
+        .container { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+        .card { background: var(--card-bg); border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1px solid var(--border-color); }
+        h2 { color: var(--primary); font-size: 20px; margin-top: 0; }
+        .step { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; padding: 16px; background: #FFF5F7; border-radius: 8px; border-left: 4px solid var(--primary); }
+        .step-num { background: var(--primary); color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+        .warning { background: #FFF8E1; border: 1px solid #FFD54F; border-radius: 8px; padding: 16px; margin: 16px 0; }
+        .warning strong { color: #F57F17; }
+        .data-list { list-style: none; padding: 0; }
+        .data-list li { padding: 8px 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; gap: 8px; }
+        .data-list li:last-child { border-bottom: none; }
+        .data-list li::before { content: "x"; color: #F44336; font-weight: 700; }
+        .email-link { display: inline-block; background: var(--primary); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 8px; }
+        footer { text-align: center; padding: 24px; color: #999; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Hesap ve Veri Silme Talebi</h1>
+        <p>Minik Adimlar: Gebelik Takibi</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>Hesabinizi Nasil Silebilirsiniz?</h2>
+            <p>Hesabinizi iki yontemden biriyle silebilirsiniz:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>
+                    <strong>Uygulama Ici (Onerilir)</strong><br>
+                    Uygulamayi acin → <em>Profil</em> sekmesine gidin → <em>Ayarlar</em> → <em>Hesabi Sil</em> secenegine tiklayin → Onaylayin.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>
+                    <strong>E-posta ile Talep</strong><br>
+                    Asagidaki e-posta adresine hesabinizin silme talebini gonderin. En gec <strong>7 is gunu</strong> icinde islem yapilir.
+                </div>
+            </div>
+            <a class="email-link" href="mailto:hcelenk@gmail.com?subject=Hesap Silme Talebi - Minik Adimlar&body=Merhaba,%0A%0AHesabimi ve iliskili tum verilerimi silmenizi talep ediyorum.%0A%0AHesap e-postasi: ">hcelenk@gmail.com adresine E-posta Gonder</a>
+        </div>
+        <div class="card">
+            <h2>Silinen Veriler</h2>
+            <p>Hesabiniz silindiginde asagidaki veriler <strong>kalici olarak</strong> silinir:</p>
+            <ul class="data-list">
+                <li>Profil bilgileri (ad, e-posta)</li>
+                <li>Gebelik takip verileri</li>
+                <li>Bebek gelisim ve bakim kayitlari</li>
+                <li>Kilo, belirti ve egzersiz gunlukleri</li>
+                <li>Dogan bebek takip verileri (emzirme, uyku, bez vb.)</li>
+                <li>Takvim ve randevu notlari</li>
+                <li>Tum uygulama tercihleri</li>
+            </ul>
+            <div class="warning">
+                <strong>Dikkat:</strong> Bu islem geri alinamaz. Silinen veriler kurtarilamaz.
+            </div>
+        </div>
+        <div class="card">
+            <h2>Saklanmaya Devam Eden Veriler</h2>
+            <p>Yasal yukumlulukler geregi asagidaki veriler belirtilen sureler boyunca saklanabilir:</p>
+            <ul class="data-list">
+                <li>Anonim kullanim istatistikleri (kisisel veri icermez)</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Minik Adimlar. Tum haklari saklidir.<br>
+        <a href="privacy-policy.html">Gizlilik Politikasi</a> | <a href="terms-of-service.html">Kullanim Kosullari</a>
+    </footer>
+</body>
+</html>
